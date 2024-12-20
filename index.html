@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de Registro -->
+    <div id="register-container" class="container hidden">
+        <h1>Registro</h1>
+        <form id="register-form">
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="text" id="fullname" placeholder="Nombre completo" required>
+            <input type="text" id="phone" placeholder="Teléfono" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Registrar</button>
+        </form>
+        <button class="logout-button hidden" id="go-to-login">Iniciar sesión</button>
+    </div>
+
+    <!-- Pantalla de Inicio de Sesión -->
+    <div id="login-container" class="container">
+        <h1>Inicio de Sesión</h1>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Nombre de usuario" required>
+            <input type="password" id="login-password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <button class="logout-button hidden">Cerrar sesión</button>
+    </div>
+
+    <!-- Pantalla del Catálogo -->
+    <div id="catalog-container" class="container hidden">
+        <h1>Catálogo de Productos</h1>
+        <input type="text" id="search-bar" placeholder="Buscar productos...">
+        <div id="product-list"></div>
+        <button class="logout-button">Cerrar sesión</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
